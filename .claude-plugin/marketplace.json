@@ -1,0 +1,11 @@
+{
+  "name": "carousel-workflow",
+  "owner": { "name": "HICHAMHEBAZ" },
+  "plugins": [
+    {
+      "name": "carousel-workflow",
+      "source": "./",
+      "description": "Interview-first carousel workflow: references + script type in, tailored run sheet and approval-gated build out."
+    }
+  ]
+}

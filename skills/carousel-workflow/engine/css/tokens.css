@@ -1,0 +1,24 @@
+/* Design tokens. Fill from the approved design brief (references/design-brief.md).
+   Each slide picks a theme with the `theme` field: a, b, c ... Add more blocks as needed. */
+:root {
+  --font-display: "Cairo", "Inter", system-ui, sans-serif;
+  --font-body: "Cairo", "Inter", system-ui, sans-serif;
+  --gutter: 84px;
+  --ease-enter: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Theme a - light, warm (cover) */
+.theme-a {
+  --bg-1: #fff1c9; --bg-2: #fdc82f; --bg-3: #fdb52b;
+  --ink: #1d142c; --soft-ink: #4a3d5c; --accent: #234fb5; --panel: #1d142c; --panel-ink: #fff1c9;
+}
+/* Theme b - light, cool */
+.theme-b {
+  --bg-1: #dff4fb; --bg-2: #4fc8ea; --bg-3: #1ca9e4;
+  --ink: #0a1a3a; --soft-ink: #20406f; --accent: #e8590c; --panel: #0a1a3a; --panel-ink: #dff4fb;
+}
+/* Theme c - dark (close) */
+.theme-c {
+  --bg-1: #4a4e99; --bg-2: #2e2e7b; --bg-3: #0c0131;
+  --ink: #fefecb; --soft-ink: #c9c9e6; --accent: #fdba2c; --panel: #0c0131; --panel-ink: #fefecb;
+}

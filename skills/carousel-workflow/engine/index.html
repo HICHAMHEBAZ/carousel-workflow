@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carousel</title>
+  <!-- Replace with the fonts from the design brief. Arabic example: Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/slides.css">
+  <style>
+    html, body { margin: 0; background: #111; }
+    body { min-height: 100vh; display: grid; place-items: center; font-family: var(--font-body); color: #eee; }
+    .wrap { display: grid; justify-items: center; padding: 20px 0; }
+    #stage { width: calc(1080px * var(--scale, 0.5)); height: calc(1350px * var(--scale, 0.5)); }
+    #stage .slide { transform: scale(var(--scale, 0.5)); transform-origin: top left; box-shadow: 0 30px 80px rgba(0,0,0,.5); display: none; }
+    #stage .slide.is-active { display: block; }
+    .nav { display: flex; gap: 18px; align-items: center; margin-top: 18px; }
+    .nav button { font: 700 16px var(--font-body); background: #eee; color: #111; border: 0; border-radius: 999px; padding: 10px 22px; cursor: pointer; }
+    .nav button:focus-visible { outline: 3px solid #f8cf2a; outline-offset: 3px; }
+    /* Export: plain vertical stack at 1:1 */
+    .export body { display: block; }
+    .export .wrap { display: block; padding: 0; }
+    .export #stage { width: auto; height: auto; }
+    .export #stage .slide { transform: none; box-shadow: none; display: block; }
+    .export .nav { display: none; }
+    @page { size: 1080px 1350px; margin: 0; }
+    @media print { .slide { break-after: page; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <main id="stage"></main>
+    <nav class="nav" aria-label="Slides">
+      <button id="prev" type="button">Prev</button>
+      <span id="pos" dir="ltr"></span>
+      <button id="next" type="button">Next</button>
+    </nav>
+  </div>
+  <script type="module" src="js/player.js"></script>
+</body>
+</html>

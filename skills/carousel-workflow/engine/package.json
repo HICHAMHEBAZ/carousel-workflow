@@ -1,0 +1,7 @@
+{
+  "name": "carousel",
+  "private": true,
+  "type": "module",
+  "scripts": { "export": "node export.mjs", "export:video": "node export.mjs --video" },
+  "devDependencies": { "playwright": "1.59.1" }
+}

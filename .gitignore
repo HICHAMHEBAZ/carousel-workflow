@@ -1,0 +1,4 @@
+node_modules/
+out/
+.carousel-history.json
+.DS_Store

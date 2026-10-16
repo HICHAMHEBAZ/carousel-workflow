@@ -1,0 +1,7 @@
+{
+  "name": "carousel-workflow",
+  "description": "Interview-first workflow that turns an article, script or topic into a social carousel (PDF + caption + hashtags), with approval gates and a small HTML to PNG/PDF engine.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": ["carousel", "linkedin", "instagram", "arabic", "rtl", "content", "workflow"]
+}
